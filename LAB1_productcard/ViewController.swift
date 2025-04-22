@@ -1,54 +1,39 @@
 import UIKit
+import SnapKit
 
-// Предположим, что это ваш текущий UIViewController
 class ViewController: UIViewController {
     
+    private let catalogButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Перейти в каталог", for: .normal)
+        button.backgroundColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1)
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        button.layer.cornerRadius = 8
+        button.addTarget(self, action: #selector(openCatalog), for: .touchUpInside)
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
-        let button = UIButton(type: .system)
-        button.setTitle("Перейти к товару", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.addTarget(self, action: #selector(navigateToProductDetail), for: .touchUpInside)
-        button.backgroundColor = .systemBrown
-        button.layer.cornerRadius = 8
-        button.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(button)
-        
-        NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            button.trailingAnchor.constraint(equalTo: view.leadingAnchor, constant: -16),
-            button.heightAnchor.constraint(equalToConstant: 48)
-        ])
-      
+        setupUI()
     }
     
-    @objc func navigateToProductDetail() {
-       
-        let productDetailVC = ProductDetailViewController()
-        productDetailVC.productName = "Кожаные лоферы"
-        productDetailVC.productDescription = """
-        Лоферы из натуральной кожи. Фигурная союзка с фактурным швом по контуру. Зауженный мыс. Кожаная стелька и подкладка. Прорезиненная подошва. В комплект входит пыльник. 
-        """
-        productDetailVC.productImage = UIImage(named: "lofer")
-        productDetailVC.productPrice = 14999
-        productDetailVC.availableSizes = ["XXS", "XS", "S", "M", "L", "XL", "XXL"]
-        productDetailVC.productSpecs = """
-        • Материал: натуральная кожа
-        • Подошва: резиновая
-        • Цвет: чёрный
-        • Страна производства: Россия
-        """
+    private func setupUI() {
+        view.addSubview(catalogButton)
         
-        if let sheet = productDetailVC.sheetPresentationController {
-            sheet.detents = [.large()]
-            sheet.prefersGrabberVisible = true
-            sheet.preferredCornerRadius = 20
+        catalogButton.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.width.equalTo(200)
+            make.height.equalTo(50)
         }
-        
-        present(productDetailVC, animated: true)
+    }
+    
+    @objc private func openCatalog() {
+        let catalogVC = CatalogViewController()
+        let navController = UINavigationController(rootViewController: catalogVC)
+        navController.modalPresentationStyle = .fullScreen
+        present(navController, animated: true)
     }
 }

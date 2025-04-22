@@ -24,6 +24,9 @@
 		D770B38D2DB7253F00B55A37 /* SFProDisplay-MediumItalic.ttf in Frameworks */ = {isa = PBXBuildFile; fileRef = D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */; };
 		D770B38E2DB7257700B55A37 /* SFProDisplay-MediumItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */; };
 		D770B38F2DB7258300B55A37 /* SFProDisplay-Heavy.ttf in Sources */ = {isa = PBXBuildFile; fileRef = D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */; };
+		D770B3932DB73C1C00B55A37 /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770B3922DB73C1C00B55A37 /* CatalogViewController.swift */; };
+		D770B3952DB7471C00B55A37 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770B3942DB7471C00B55A37 /* ProductCell.swift */; };
+		D770B3972DB747D900B55A37 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D770B3962DB747D900B55A37 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		D770B3892DB7237C00B55A37 /* SFProDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProDisplay-MediumItalic.ttf"; path = "LAB1_productcard/SFProDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
 		D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Heavy.ttf"; sourceTree = "<group>"; };
 		D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D770B3922DB73C1C00B55A37 /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		D770B3942DB7471C00B55A37 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		D770B3962DB747D900B55A37 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		D751F57F2DB50ADA00525381 = {
 			isa = PBXGroup;
 			children = (
+				D770B3962DB747D900B55A37 /* Product.swift */,
+				D770B3942DB7471C00B55A37 /* ProductCell.swift */,
+				D770B3922DB73C1C00B55A37 /* CatalogViewController.swift */,
 				D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */,
 				D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */,
 				D751F5C02DB5166E00525381 /* ProductDetailViewController.swift */,
@@ -300,11 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D770B3932DB73C1C00B55A37 /* CatalogViewController.swift in Sources */,
 				D770B38F2DB7258300B55A37 /* SFProDisplay-Heavy.ttf in Sources */,
 				D770B38E2DB7257700B55A37 /* SFProDisplay-MediumItalic.ttf in Sources */,
 				D751F5902DB50ADA00525381 /* ViewController.swift in Sources */,
 				D751F58C2DB50ADA00525381 /* AppDelegate.swift in Sources */,
 				D751F58E2DB50ADA00525381 /* SceneDelegate.swift in Sources */,
+				D770B3952DB7471C00B55A37 /* ProductCell.swift in Sources */,
+				D770B3972DB747D900B55A37 /* Product.swift in Sources */,
 				D751F5962DB50ADA00525381 /* LAB1_productcard.xcdatamodeld in Sources */,
 				D751F5C12DB5166E00525381 /* ProductDetailViewController.swift in Sources */,
 			);
