@@ -20,6 +20,10 @@
 		D751F5C12DB5166E00525381 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D751F5C02DB5166E00525381 /* ProductDetailViewController.swift */; };
 		D770B3852DB609C700B55A37 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D770B3842DB609C700B55A37 /* SnapKit */; };
 		D770B3872DB60CD700B55A37 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D770B3862DB60CD700B55A37 /* SnapKit */; };
+		D770B38C2DB7252600B55A37 /* SFProDisplay-Heavy.ttf in Frameworks */ = {isa = PBXBuildFile; fileRef = D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */; };
+		D770B38D2DB7253F00B55A37 /* SFProDisplay-MediumItalic.ttf in Frameworks */ = {isa = PBXBuildFile; fileRef = D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */; };
+		D770B38E2DB7257700B55A37 /* SFProDisplay-MediumItalic.ttf in Sources */ = {isa = PBXBuildFile; fileRef = D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */; };
+		D770B38F2DB7258300B55A37 /* SFProDisplay-Heavy.ttf in Sources */ = {isa = PBXBuildFile; fileRef = D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		D751F5AF2DB50ADF00525381 /* LAB1_productcardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAB1_productcardUITests.swift; sourceTree = "<group>"; };
 		D751F5B12DB50ADF00525381 /* LAB1_productcardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAB1_productcardUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D751F5C02DB5166E00525381 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductDetailViewController.swift; path = LAB1_productcard/ProductDetailViewController.swift; sourceTree = "<group>"; };
+		D770B3882DB7235200B55A37 /* SFProDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProDisplay-Heavy.ttf"; path = "LAB1_productcard/SFProDisplay-Heavy.ttf"; sourceTree = "<group>"; };
+		D770B3892DB7237C00B55A37 /* SFProDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SFProDisplay-MediumItalic.ttf"; path = "LAB1_productcard/SFProDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Heavy.ttf"; sourceTree = "<group>"; };
+		D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-MediumItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D770B38D2DB7253F00B55A37 /* SFProDisplay-MediumItalic.ttf in Frameworks */,
+				D770B38C2DB7252600B55A37 /* SFProDisplay-Heavy.ttf in Frameworks */,
 				D770B3872DB60CD700B55A37 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +97,8 @@
 		D751F57F2DB50ADA00525381 = {
 			isa = PBXGroup;
 			children = (
+				D770B38B2DB7240000B55A37 /* SFProDisplay-MediumItalic.ttf */,
+				D770B38A2DB723DC00B55A37 /* SFProDisplay-Heavy.ttf */,
 				D751F5C02DB5166E00525381 /* ProductDetailViewController.swift */,
 				D751F58A2DB50ADA00525381 /* LAB1_productcard */,
 				D751F5A42DB50ADF00525381 /* LAB1_productcardTests */,
@@ -141,6 +153,8 @@
 		D751F5C52DB5EEC700525381 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D770B3892DB7237C00B55A37 /* SFProDisplay-MediumItalic.ttf */,
+				D770B3882DB7235200B55A37 /* SFProDisplay-Heavy.ttf */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D770B3912DB7259700B55A37 /* PBXTargetDependency */,
 			);
 			name = LAB1_productcard;
 			packageProductDependencies = (
@@ -285,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D770B38F2DB7258300B55A37 /* SFProDisplay-Heavy.ttf in Sources */,
+				D770B38E2DB7257700B55A37 /* SFProDisplay-MediumItalic.ttf in Sources */,
 				D751F5902DB50ADA00525381 /* ViewController.swift in Sources */,
 				D751F58C2DB50ADA00525381 /* AppDelegate.swift in Sources */,
 				D751F58E2DB50ADA00525381 /* SceneDelegate.swift in Sources */,
@@ -322,6 +339,10 @@
 			isa = PBXTargetDependency;
 			target = D751F5872DB50ADA00525381 /* LAB1_productcard */;
 			targetProxy = D751F5AC2DB50ADF00525381 /* PBXContainerItemProxy */;
+		};
+		D770B3912DB7259700B55A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D770B3902DB7259700B55A37 /* SnapKit */;
 		};
 /* End PBXTargetDependency section */
 
@@ -646,6 +667,11 @@
 			productName = SnapKit;
 		};
 		D770B3862DB60CD700B55A37 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D770B3832DB603DD00B55A37 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D770B3902DB7259700B55A37 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D770B3832DB603DD00B55A37 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;

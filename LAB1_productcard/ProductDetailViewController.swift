@@ -82,7 +82,7 @@ class ProductDetailViewController: UIViewController {
         productNameLabel.text = productName
         productNameLabel.numberOfLines = 2
         productNameLabel.textColor = UIColor(named: "Black")
-        productNameLabel.font = UIFont(name: "SFProDisplay-Heavy", size: 24)
+        productNameLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         titleStack.addArrangedSubview(productNameLabel)
         
         infoButton.setImage(UIImage(named: "infoButton"), for: .normal)
@@ -104,7 +104,7 @@ class ProductDetailViewController: UIViewController {
         productDescriptionLabel.text = productDescription
         productDescriptionLabel.numberOfLines = 0
         productDescriptionLabel.textColor = UIColor(named: "Black")
-        productDescriptionLabel.font = UIFont(name: "SFProDisplay-MediumItalic", size: 17)
+        productDescriptionLabel.font = UIFont.systemFont(ofSize: 17, weight: .ultraLight)
         contentView.addSubview(productDescriptionLabel)
         
         productDescriptionLabel.snp.makeConstraints { make in
